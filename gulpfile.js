@@ -25,6 +25,7 @@ import {js} from './gulp/tasks/js.js';
 import {images} from './gulp/tasks/images.js';
 import {svgSprite} from './gulp/tasks/svgSprite.js';
 import {otfToTtf, ttfToWoff, createFontsStyle} from './gulp/tasks/fonts.js';
+import {copy} from './gulp/tasks/copy.js';
 
 // FILE CHANGE TRACKING
 const watcher = () => {
@@ -32,10 +33,11 @@ const watcher = () => {
   watch($.scss.watch, scss);
   watch($.img.watch, images);
   watch($.js.watch, js);
+  watch($.copy.watch, copy);
 }
 
 const fonts = series(otfToTtf, ttfToWoff, createFontsStyle);
-const main = series(fonts, parallel(html, scss, js, images, svgSprite));
+const main = series(fonts, parallel(html, scss, js, images, svgSprite, copy));
 const build = series(clean, main);
 const start = series(build, parallel(watcher, server));
 

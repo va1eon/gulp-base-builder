@@ -33,6 +33,12 @@ export const path = {
     build: `${buildDir}/fonts/`
   },
 
+  copy: {
+    src: `${srcDir}/resources/**/*.*`,
+    build: `${buildDir}/resources/`,
+    watch: `${srcDir}/resources/**/*.*`,
+  },
+
   clean: buildDir,
   buildDir,
   srcDir,
