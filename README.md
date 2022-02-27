@@ -32,9 +32,11 @@
 
 `npm run start` - запустит локальный сервер http://localhost:3030 для разработки проекта
 
-`npm run dev` - соберет проект в **development** режиме
+`npm run dev` - соберет проект в ***development*** режиме
 
-`npm run build` - соберет проект в **production** режиме
+`npm run build` - соберет проект в ***production*** режиме
+
+`npm run sprite` - создает svg sprite
 
 ## Файловая структура
 
@@ -49,6 +51,7 @@ root-directory
 |   |   |— plugins.js
 |— task
 |   |— clean.js
+|   |— copy.js
 |   |— fonts.js
 |   |— html.js
 |   |— images.js
@@ -70,6 +73,7 @@ root-directory
 |   |   |— modules
 |   |   |   |— supportsWebp.js
 |   |   |— main.js
+|   |— resources
 |   |— scss
 |   |   |— blocks
 |   |   |   |— _header.scss
