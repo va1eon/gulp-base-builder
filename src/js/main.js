@@ -1,3 +1,4 @@
+import 'focus-visible';
 import {supportsWebp} from './modules/supportsWebp.js';
 
 // SUPPORT WEBP
