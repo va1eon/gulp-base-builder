@@ -1,3 +1,7 @@
 $fontFamily: '';
 $fontWeight: 400;
-$fontSize: rem(14)
+$fontSize: rem(14);
+
+$contentWidth: 1200px;
+$containerOffset: 15px;
+$containerWidth: calc(#{$contentWidth} + #{$containerOffset} * 2);
