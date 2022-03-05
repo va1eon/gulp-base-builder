@@ -1,6 +1,6 @@
 {
   "name": "gulp-v1",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "gulp task runner for layout",
   "main": "gulpfile.js",
   "type": "module",
