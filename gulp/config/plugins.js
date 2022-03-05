@@ -42,8 +42,8 @@ export const options = {
   },
 
   _webpCss: {
-    webClass: '.webp',
-    noWebClass: '.no-webp',
+    webpClass: '.webp',
+    noWebpClass: '.no-webp',
   },
 
   _imagemin: {
